@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex Mikaelzen</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!--Main-->
+    <main>
+            <!-- Section Titulo-->
+        <section class="containerTitle">
+            <img  class= "title" src="./Titulo1.png">
+            <img  class= "title" src="./Titulo2.png">
+
+        </section>   
+
+
+        <section>
+
+            <!--Section Pokedex-->
+            <div class="cards_container">
+
+                <div class="cards_container_item">
+                    <figure><img  class="section_img" ; src="./PokeFondo1.png"></figure>
+                    <div class="outline" >
+                       <img class= "centra" src="./pokeball_4.png" alt="Pokemon" id="pokeImg" >
+                    </div> 
+                    
+                    <input class="input" type="text" placeholder="Busca pokemón aquí" id="pokeName" name="pokeName">
+                    <!--Este código es del cual depende que se visualice el resto de los datos,
+                aun si no estan visibles-->
+                    <div class="titulo">
+                        <p class="pokeNumero" id="pokeNumero">Número </p>
+                        <p class="pokeNombre" id="pokeNombre">Nombre</p>
+                    </div>
+
+                     
+                    <button class="cambiaPoke" onclick="fetchPokemon()">Ver pokemón</button>
+                </div>
+                
+
+                <!-- Second section-->
+                <div class="cards_container_item">
+                    <figure><img  class="section_img"; src="./PokeFondo2.png"></figure>
+                    <div class=" information" > 
+                        <!-- Creo que no es necesaria la clase pokeTipo, 
+                        ni statX solo los id's-->
+                        <div class="tags">
+                            <p class="etiquetaStats">Tipo 1:</p>
+                            <p class="pokeTipo datos" id="pokeTipo"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">Tipo 2:</p>
+                            <p class="pokeTipo datos" id="pokeTipo2"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">HP:</p>
+                            <p class="stat1 datos" id="stat1"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">Ataque:</p>
+                            <p class="stat2 datos" id="stat2"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">Defensa:</p>
+                            <p class="stat3 datos" id="stat3"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">At. Especial:</p>
+                            <p class="stat4 datos" id="stat4"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">Df. Especial:</p>
+                            <p class="stat5 datos" id="stat5"></p>
+                        </div>
+                        <div class="tags">
+                            <p class="etiquetaStats">Velocidad:</p>
+                            <p class="stat6 datos" id="stat6"></p>
+                        </div>
+
+
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </section><br><br>
+
+    </main>
+
+    <footer class="footer">
+
+        <script src="./pokedex.js"></script>
+    </footer>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+
+:root{
+    --color-bg: #fff;
+    --color-primary: #084bc3;
+    --color-secondary: #09416a;
+    --color-tertiary: #617286;
+    --button-primary: #2854cc;
+    --button-secondary: #f1f5ff;
+    --box-shadow: 0 0 12px rgba(0,0,0, .2);
+}
+
+*{
+    /* outline */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*  Title */
+
+.containerTitle{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    overflow:hidden;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.title{
+    width: max-content;
+    height: max-content;
+}
+
+
+/* Card Container ambas páginas */
+.cards_container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+
+/* Container de sectiones pokedex (ambas páginas)*/
+.cards_container_item {
+    width: 400px;
+    height: 572px;
+    margin-bottom: 10px;
+    border: 0px solid lightgray;
+    background: #fff;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+/* Aqui va el pokemon*/
+.outline{
+    width:248px;
+    height: 170px ;
+    color:rgb(25, 31, 77);
+    border: 5px solid  #800e6d;
+    background: linear-gradient(0deg, #a43e9f 0%, #32197a 50%, rgba(58,182,207,1) 100%);
+    position:absolute;
+    top:48%;
+    left:47.5%;
+    transform:translate(-50%,-50%);
+    border-radius: 5px;
+    
+}
+
+/* Centrar imagen pokemon*/
+.centra{
+    position:relative;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    max-width:170px;
+    max-height: 140px;
+  
+    }
+
+
+/* Titulo y Nombre cambiar*/
+.titulo {
+    width: 210px;
+    min-width: 180px;
+    height: 35px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, rgb(56, 46, 128) 0%, rgb(144, 38, 168) 47%, rgb(21, 176, 207) 100%);
+    
+    
+    border-radius: 5px;
+
+    position: relative;
+    bottom: 44.4%;
+    right: -52.3%;
+    transform:translate(-50%,-50%);
+
+}
+.pokeNombre {
+    margin-left: 10px;
+}
+
+/* Aquí va el input*/
+.input{
+    width:180px;
+    height: 46px ;
+    color:rgb(25, 31, 77);
+    border: 6px outset  #36b0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position:relative;
+    bottom:26%;
+    left:32.5%;
+    transform:translate(-50%,-50%);
+    padding: 0px 0px 0px 10px;
+    font-size: 1rem;
+}
+
+/* Aquí va el botón*/
+.cambiaPoke{   
+    position: absolute;
+    bottom: 5%;
+    left:30%;
+    transform:translate(-50%,-50%);
+    width: 160px;
+    height: 46px;
+    background: rgb(236, 215, 96);
+    color:rgb(32, 40, 116);
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+    border-radius: 8px;
+    border:5px outset #c4a001;
+}
+
+
+.cambiaPoke::after
+{
+    transform:scale(1.1);
+}
+
+/* Acá deberán ir datos*/
+.information{
+    width:296px;
+    height: 388px ;
+    color:rgb(36, 48, 128);
+    border: 5px solid  #d5e644;
+    background: linear-gradient(0deg, rgba(164,62,159,1) 0%, rgba(50,25,122,1) 50%, rgba(58,182,207,1) 100%);
+    position:absolute;
+    top:55%;
+    left:53%;
+    transform:translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+/* Contenedor para cuadro de información y etiquetas */
+
+.information .tags {
+    width: 100%;
+    height: 318px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.infoText{
+    padding:10px;
+    margin: 0 auto;
+
+}
+  /* Mini contenedor con texto */
+.information .etiquetaStats {
+    font-weight: 700;
+    height: 36px;
+    width: 45%;
+    min-width: 100px;
+    max-width: 120px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #77dbdf;
+    
+    border-radius: 8px;
+}
+
+/* Los datos tienen este formato */
+.datos {
+    width: 110px;
+    height: 36px;
+    color: rgb(26, 26, 2);
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(118, 201, 226);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Poke Fondo */
+
+.section_img{
+    width: 100%;
+    margin: 0;
+}
+
+
+footer{
+    height:360px;
+    width:100%;
+    background-image: url("./PokeWallpaper.jpg");
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ToDo Media Queries */
+@media screen and (max-width:800px){
+}
+
+@media screen and (max-width:500px){
+}
